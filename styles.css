@@ -1,0 +1,12 @@
+/* CSS: img must have max-width:100% and height:auto display:block 
+properties to resize responsively, relative to the width of its parent element, 
+without exceeding its original size -->
+
+img element should be centered within its parent element */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+}
