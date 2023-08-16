@@ -4,9 +4,38 @@ without exceeding its original size -->
 
 img element should be centered within its parent element */
 
+body {
+    background-color: rgb(133, 103, 163) ;
+    font-family: Khand,sans-serif;
+    text-align: center;
+}
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border-top: 4px solid;
+    border-left: 4px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
 }
+
+figcaption {
+    text-align: center;
+    background-color: rgb(159, 28, 159);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 5px;
+    border: 3px solid rgb(11, 10, 50);
+    border-radius: 15px;
+}
+
+fieldset{
+    border: none;
+}
+
