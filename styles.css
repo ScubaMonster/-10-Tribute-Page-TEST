@@ -3,15 +3,15 @@ properties to resize responsively, relative to the width of its parent element,
 without exceeding its original size -->
 
 img element should be centered within its parent element */
-:root{
+:root {
     --palette-tardis-1: #10081e;
     --palette-tardis-2: #200e34;
     --palette-tardis-3: #003b6f;
     --palette-tardis-4: #d5b6e3;
     --palette-tardis-6: #9f95d2;
-    --palette-logo-6: #c9e6ee; 
-
+    --palette-logo-6: #c9e6ee;
 }
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -20,7 +20,8 @@ body {
     color: var(--palette-tardis-1);
 }
 
-#title, #description {
+#title,
+#description {
     text-align: center;
     font-size: 2em;
 }
@@ -45,56 +46,58 @@ fieldset {
     display: grid;
     place-items: center;
     margin: 3em;
-	padding: 1rem;
+    padding: 1rem;
     border: none;
 }
 
-legend{
+legend {
     font-size: 1.7em;
     font-weight: 600;
     margin-left: 5rem;
 }
 
-.basic-list, .record-list {
+.basic-list,
+.record-list {
     padding: 0;
-	margin: 0;
-	max-width: 700px;
-	position: relative;
+    margin: 0;
+    max-width: 700px;
+    position: relative;
 }
 
 ul::before {
-	content: '';
-	width: 0.5rem;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	background: var(--palette-tardis-3);
+    content: '';
+    width: 0.5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: var(--palette-tardis-3);
     box-shadow: 5px 0 0 0 var(--palette-tardis-2);
-	z-index: -1;
+    z-index: -1;
 }
 
 
 .record-list::before {
     left: 90%;
 }
+
 .basic-list::before {
     left: 10%;
 }
 
 li {
     list-style-type: none;
-	padding: 1.5rem 1.5rem 1rem;
-	border-radius: 1.5rem;
-	background: var(--palette-tardis-3);
+    padding: 1.5rem 1.5rem 1rem;
+    border-radius: 1.5rem;
+    background: var(--palette-tardis-3);
     box-shadow: 5px 5px var(--palette-tardis-2);
     font-size: large;
     color: var(--palette-logo-6);
     text-shadow: 0.5px 1px var(--palette-tardis-2);
-    
+
 }
 
-li + li {
-	margin-top: 1rem;
+li+li {
+    margin-top: 1rem;
 }
 
 #tribute-link {
@@ -103,5 +106,5 @@ li + li {
 
 footer {
     font-size: small;
-    margin: 1rem ;
+    margin: 1rem;
 }
