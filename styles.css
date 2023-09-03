@@ -3,43 +3,105 @@ properties to resize responsively, relative to the width of its parent element,
 without exceeding its original size -->
 
 img element should be centered within its parent element */
+:root{
+    --palette-tardis-1: #10081e;
+    --palette-tardis-2: #200e34;
+    --palette-tardis-3: #003b6f;
+    --palette-tardis-4: #d5b6e3;
+    --palette-tardis-6: #9f95d2;
+    --palette-logo-6: #c9e6ee; 
 
+}
 body {
-    background-color: #003b6fda ;
-    font-family: Khand,sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: var(--palette-tardis-6);
+    font-family: Khand, sans-serif;
+    color: var(--palette-tardis-1);
+}
+
+#title, #description {
     text-align: center;
+    font-size: 2em;
 }
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 20px;
-    padding: 0 ;
+    padding: 0;
     margin: 0;
 }
 
-#img-div {
-    border: 3px solid #0b0a32;
-    border-radius: 20px;
-    padding: 0;
-    margin: 0; 
-    background-color: #1206;
-}
-
 figcaption {
-    text-align: center;
-    color: #a7b0ae;
-    text-shadow: 1px 1px #0b0a32;
-    width: fit-content;
-    margin-left: 10px;
+    color: var(--palette-logo-6);
+    font-size: larger;
+    margin-left: 20px;
     margin-right: auto;
-    margin-top: 5px;
+    margin-top: -50px;
+}
+
+fieldset {
+    display: grid;
+    place-items: center;
+    margin: 3em;
+	padding: 1rem;
+    border: none;
+}
+
+legend{
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-left: 5rem;
+}
+
+.basic-list, .record-list {
+    padding: 0;
+	margin: 0;
+	max-width: 700px;
+	position: relative;
+}
+
+ul::before {
+	content: '';
+	width: 0.5rem;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: var(--palette-tardis-3);
+    box-shadow: 5px 0 0 0 var(--palette-tardis-2);
+	z-index: -1;
 }
 
 
+.record-list::before {
+    left: 90%;
+}
+.basic-list::before {
+    left: 10%;
+}
+
+li {
+    list-style-type: none;
+	padding: 1.5rem 1.5rem 1rem;
+	border-radius: 1.5rem;
+	background: var(--palette-tardis-3);
+    box-shadow: 5px 5px var(--palette-tardis-2);
+    font-size: large;
+    color: var(--palette-logo-6);
+    text-shadow: 0.5px 1px var(--palette-tardis-2);
+    
+}
+
+li + li {
+	margin-top: 1rem;
+}
+
+#tribute-link {
+    color: var(--palette-tardis-3);
+}
 
 footer {
-    font-size: x-small;
+    font-size: small;
+    margin: 1rem ;
 }
-
